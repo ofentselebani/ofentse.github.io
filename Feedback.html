@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+<body>
+
+  <a href="Index.html">Back To Home</a>
+
+  <h1>Feedback</h1>
+  
+    <form action="submit_feedback.php" method="post">
+    <label for="overall-experience"><p>1. How would you rate your overall experience at our movie theater?</label><P/>
+      <select id="overall-experience" name="overall-experience">
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <label for="movie-watched"><p>2. Which movie did you watch during your visit?</label><p/>
+    <input type="text" id="movie-watched" name="movie-watched">
+
+    <label for="cleanliness"><p>3. How would you rate the cleanliness and maintenance of the theater?</label><p/>
+    <select id="cleanliness" name="cleanliness">
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <label for="quality"><p>4. How satisfied were you with the quality of the picture and sound?</label><p/>
+    <select id="quality" name="quality">
+      <option value="very-satisfied">Very satisfied</option>
+      <option value="satisfied">Satisfied</option>
+      <option value="neutral">Neutral</option>
+      <option value="dissatisfied">Dissatisfied</option>
+      <option value="very-dissatisfied">Very dissatisfied</option>
+    </select>
+
+    <label for="ticket-price"><p>5. Rate our Website?</label><p/>
+    <input type="radio" id="price-reasonable-yes" name="ticket-price" value="yes">
+    <label for="price-reasonable-yes">1 Star</label>
+    <input type="radio" id="price-reasonable-somewhat" name="ticket-price" value="somewhat">
+    <label for="price-reasonable-somewhat">3 Stars</label>
+    <input type="radio" id="price-reasonable-no" name="ticket-price" value="no">
+    <label for="price-reasonable-no">5 Stars</label>
+
+    <label for="staff-friendliness"><p>6. How would you rate the friendliness and helpfulness of our staff?</label><p/>
+    <select id="staff-friendliness" name="staff-friendliness">
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <label for="concessions"><p>7. Did you find our website satisfactory?</label><p/>
+    <input type="radio" id="concessions-satisfactory-yes" name="concessions" value="yes">
+    <label for="concessions-satisfactory-yes">Yes, very satisfactory</label>
+    <input type="radio" id="concessions-satisfactory-somewhat" name="concessions" value="somewhat">
+    <label for="concessions-satisfactory-somewhat">Yes, somewhat satisfactory</label>
+    <input type="radio" id="concessions-satisfactory-no" name="concessions" value="no">
+    <label for="concessions-satisfactory-no">No, not satisfactory</label>
+
+    <label for="liked-experience"><p>8. Is there anything specific you liked about your experience at our movie theater?</label><p/>
+    <textarea id="liked-experience" name="liked-experience"></textarea>
+
+    <label for="improvements"><p>9. Is there anything we could improve upon to enhance your future visits?</label><p/>
+    <textarea id="improvements" name="improvements"></textarea>
+
+    <label for="recommendation"><p>10. Would you recommend our movie theater to your friends and family?</label><P/>
+    <input type="radio" id="recommendation-yes" name="recommendation" value="yes">
+    <label for="recommendation-yes">Yes</label>
+    <input type="radio" id="recommendation-no" name="recommendation" value="no">
+    <label for="recommendation-no">No</label>
+
+   <input type="submit" value="Submit" onclick="window.location.href='https://support.cwtv.com/hc/en-us'; return false;">
+
+  </form>
+</body>
+</html>
